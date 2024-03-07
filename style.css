@@ -1,0 +1,241 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/*ヘッダー*/
+header {
+    width: 100%;
+    height: 70px;
+    display: flex;
+}
+
+header .menu {
+    width: 25px;
+    height: 25px;
+    background-color: gray;
+    margin: 20px 0 0 20px;
+}
+
+header .icon {
+    width: 75px;
+    height: 25px;
+    background-color: gray;
+    margin: 20px 0 0 20px;
+}
+
+header textarea {
+    margin: 10px 0 0 250px;
+    width: 470px;
+    height: 37px;
+    border-radius: 20px 0 0 20px;
+    font-size: 25px;
+    outline: none;
+    resize: none;
+    border-color: rgb(190, 189, 189);
+}
+
+header .engin {
+    width: 65px;
+    height: 37px;
+    border-radius: 0 20px 20px 0;
+    border: solid 1px gray;
+    margin: 10px 0 0 0;
+}
+
+header .mic {
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    border: solid 1px gray;
+    margin: 10px 0 0 15px;
+}
+
+header .header-container {
+    position: absolute;
+    top: 10px;
+    left: 1080px;
+    width: 140px;
+}
+
+.header-container button {
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    border: solid 1px gray;
+}
+
+.header-container button:not(:nth-child(3)) {
+    margin-right: 5px;
+}
+
+.contents {
+    display: flex;
+}
+
+
+
+/*サイドバー*/
+.side {
+    width: 20%;
+    
+}
+
+.side.active {
+    display: none;
+}
+
+.side a {
+    display: flex;
+    text-decoration: none;
+    color: black;
+}
+
+.side .more {
+    display: flex;
+}
+
+.side .border {
+    width: 90%;
+    height: 1px;
+    background-color: rgb(213, 213, 213);
+    margin: 20px auto 0 auto;
+}
+
+.side .icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    border: solid 1px gray;
+    margin: 10px 0 0 15px;
+    background-color: gray;
+}
+
+.side .more-view {
+    display: none;
+}
+
+.side .more-view.active {
+    display: block;
+}
+
+.side .letter {
+    margin: 14px 0 0 15px;
+    font-size: 14px;
+}
+
+.side .title {
+    margin: 15px 0 5px 15px;
+}
+
+
+
+/*サイドバー縮小*/
+.side-2 {
+    width: 7%;
+    display: none;
+}
+
+.side-2.active {
+    display: block;
+}
+
+.side-2_container {
+    margin: 10px 0 0 15px;
+}
+
+.side-2 li {
+    list-style: none;
+    margin-bottom: 10px;
+    width: 50px;
+}
+
+.side-2 .icon {
+    width: 40px;
+    height: 40px;
+    background-color: gray;
+    margin: 0 auto;
+}
+
+.side-2 a {
+    text-decoration: none;
+    color: rgb(98, 97, 97);
+}
+
+.side-2 .side-2_letter {
+    font-size: 10px;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+
+
+/*メインコンテンツ*/
+.main {
+    width: 80%; 
+}
+
+.main.active {
+    width: 93%;
+}
+
+.main .movie-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.movie-container .movie {
+    margin: 20px 10px 20px 10px;
+    width: 30%;
+    min-width: 300px;
+}
+
+.movie-container .movie .sum {
+    width: 100%;
+    height: 170px;
+    background-color: gray;
+    border-radius: 15px;
+}
+
+.movie-container .movie .sum.active {
+    height: 190px;
+}
+
+.main .movie-inf {
+    display: flex;
+}
+
+.movie-inf .icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    border: solid 1px gray;
+    margin: 10px 0 0 0;
+    background-color: gray;
+}
+
+.movie-inf .movie-title {
+    margin: 10px 0 0 5px;
+    font-size: 14px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.movie-inf .detail {
+    width: 3px;
+    height: 15px;
+    background-color: gray;
+    margin: 12px 5px 0 auto;
+}
+
+.movie-inf-2 {
+    padding-left: 40px;
+}
+
+.movie-inf-2 p {
+    font-size: 10px;
+    color: gray;
+}
